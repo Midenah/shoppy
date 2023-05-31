@@ -1,0 +1,364 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #FFFFFF;
+  overflow-x: hidden;
+}
+body header .one {
+  background: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+body header .one a {
+  font-weight: 700;
+  color: #FFFFFF;
+}
+body header .two {
+  margin: 2% 9%;
+  display: flex;
+  justify-content: space-between;
+}
+body header .two input {
+  width: 550px;
+  height: 30px;
+  background: #F5F5F5;
+  border: none;
+  outline: none;
+  padding-left: 1%;
+  border-radius: 6px;
+}
+body header .two .fa-solid {
+  margin-left: -26%;
+  margin-top: 7px;
+}
+body header .two select {
+  border: none;
+}
+body header .three {
+  padding: 10px 9%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #000000;
+}
+body header .three span {
+  font-size: 24px;
+  font-weight: bold;
+}
+body header .three .first {
+  display: flex;
+  gap: 50px;
+  margin-right: 5%;
+  list-style: none;
+}
+body header .three .second {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+body .hero {
+  background: #000000;
+  margin: 9%;
+  padding-left: 4%;
+  height: 456px;
+  color: #FFFFFF;
+}
+body .hero p {
+  padding-top: 7%;
+  margin-bottom: 4%;
+}
+body .hero p i {
+  margin-right: 28px;
+  font-size: 50px;
+}
+body .hero h1 {
+  font-size: 55px;
+  margin-bottom: 4%;
+  white-space: pre-line;
+}
+body .hero img {
+  float: right;
+}
+body .hero a {
+  font-size: 18px;
+  text-decoration: underline;
+}
+body .hero .dot {
+  margin-top: 6%;
+}
+body aside {
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+body aside img {
+  padding-left: 8%;
+}
+body main {
+  margin-left: 9%;
+  margin-right: 9%;
+}
+body main .explore {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+body main .explore h1 {
+  margin-bottom: 5%;
+  font-weight: 900;
+  font-size: 40px;
+}
+body main .explore a {
+  float: right;
+  font-size: 20px;
+  color: #5AC0C0;
+}
+body main .explore img {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+body main .feminine {
+  margin-top: 2%;
+}
+body main .feminine img {
+  float: right;
+  margin-left: 20px;
+}
+body main .feminine h3 {
+  font-size: 26px;
+  white-space: pre-line;
+  margin-bottom: 2%;
+}
+body main .feminine p {
+  color: rgba(30, 30, 30, 0.4352941176);
+  white-space: pre-line;
+  margin-bottom: 2%;
+}
+body main .feminine button {
+  width: 125px;
+  height: 30px;
+  background: #C1DCDC;
+  border: none;
+  padding-right: 3%;
+}
+body main .gadget {
+  margin-left: 50%;
+  margin-top: 30%;
+  margin-bottom: 6%;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  width: 1250px;
+  height: 110px;
+  background: #5AC0C0;
+  transform: translate(-50%, -50%);
+}
+body main .gadget .cut {
+  background: #C1DCDC;
+  width: 90%;
+  height: 100%;
+  box-sizing: border-box;
+  border-right: 100px solid #02A0A0;
+  border-bottom: 100px solid transparent;
+}
+body main .gadget .cut h4 {
+  margin-top: 4%;
+  margin-left: 3%;
+}
+body main .gadget .cut p {
+  margin-left: 3%;
+}
+body main .gadget .slash {
+  background: #02A0A0;
+  width: 40%;
+  height: 100%;
+  box-sizing: border-box;
+}
+body main .gadget .slash button {
+  float: right;
+  background: #000000;
+  color: #FFFFFF;
+  margin-top: 10%;
+  margin-right: 5%;
+  width: 80px;
+  height: 30px;
+  border-radius: 6px;
+}
+body main .new {
+  display: flex;
+  margin-top: 3%;
+  color: #02A0A0;
+  margin-left: 3%;
+}
+body main .new .pure {
+  border: 1px solid;
+  width: 16px;
+  height: 35px;
+  background: #02A0A0;
+}
+body main .new .featured {
+  margin-left: 1%;
+  margin-top: 5px;
+}
+body main .arrival {
+  margin-left: 3%;
+  margin-top: 2%;
+  font-size: 28px;
+  margin-bottom: 3%;
+}
+body main .img {
+  margin-left: 3%;
+}
+body main .img .imgs {
+  float: right;
+}
+body main .img .imgss {
+  float: right;
+  margin-right: 1%;
+  margin-top: -17.7rem;
+}
+body main .saved {
+  margin-top: 10%;
+  padding: 2%;
+  border: 1px solid #e8e5e5;
+}
+body main .saved p {
+  font-size: 24px;
+  font-weight: 600;
+}
+body main .saved .images {
+  display: flex;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+body main .saved .images figure {
+  margin-left: 10px;
+}
+body main .saved .images figure figcaption {
+  margin-top: 1%;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 1%;
+}
+body main .saved .images figure figcaption h6 {
+  font-weight: normal;
+  font-size: 16px;
+  padding: 2%;
+  padding-left: 0;
+  line-height: 18px;
+  white-space: pre-line;
+}
+body main .saved .images figure button {
+  color: #2283DC;
+  border: 1px solid #e8e5e5;
+  height: 40px;
+  width: 120px;
+  border-radius: 10px;
+  background: #FFFFFF;
+}
+body footer {
+  background: #000000;
+  height: 805px;
+  color: #FFFFFF;
+  margin-top: 10%;
+  padding-top: 5%;
+}
+body footer .footer {
+  padding-left: 8%;
+  display: flex;
+  justify-content: space-between;
+}
+body footer .footer .left-footer h5 {
+  margin-right: 500px;
+  font-weight: 200;
+  font-size: 18px;
+  margin-bottom: 3%;
+}
+body footer .footer .left-footer p {
+  font-size: 16px;
+  font-weight: 200;
+  margin-bottom: 3%;
+}
+body footer .footer .left-footer a {
+  font-size: 16px;
+}
+body footer .footer i {
+  font-size: 40px;
+}
+body footer .footer .right-footer h5 {
+  margin-right: 100px;
+  font-weight: 200;
+  font-size: 18px;
+  margin-bottom: 3%;
+}
+body footer .footer .right-footer p {
+  font-size: 16px;
+  font-weight: 200;
+  margin-bottom: 3%;
+}
+body footer .footer .right-footer a {
+  font-size: 16px;
+}
+body footer table {
+  border: 1px solid rgba(255, 255, 255, 0.2235294118);
+  padding: 5%;
+  width: 1510px;
+  padding-left: 5%;
+  margin-top: 5%;
+}
+body footer table tr {
+  padding-left: 0;
+}
+body footer table tr th {
+  font-size: 16px;
+  font-weight: 100;
+  font-style: normal;
+  text-transform: uppercase;
+}
+body footer table tr .email {
+  padding-right: 5%;
+}
+body footer table tr td {
+  font-size: 14px;
+  padding-left: 4%;
+  padding-top: 2%;
+}
+body footer table tr td i {
+  font-size: 20px;
+  margin-left: 5px;
+}
+body footer table tr .social {
+  width: 250px;
+  text-transform: uppercase;
+}
+body footer table tr .detail-img {
+  display: flex;
+  margin-top: -80px;
+  margin-left: 40px;
+}
+body footer section {
+  margin-top: 2%;
+  margin-left: 8%;
+}
+body footer section p {
+  font-weight: 200;
+  margin-bottom: 1%;
+}
+body footer section img {
+  margin-left: 0;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+body footer section a {
+  color: #AB4E1A;
+  font-size: 26px;
+  padding-left: 1%;
+}
+body footer section h6 {
+  font-size: 18px;
+  font-weight: 200;
+  float: right;
+  padding-right: 5%;
+}/*# sourceMappingURL=index.css.map */
