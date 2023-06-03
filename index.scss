@@ -1,8 +1,9 @@
+@import "./component/mediaquaries";
+@import "./component/base";
 *{
     padding: 0;
     margin: 0;
 }
-
 body{
     background: #FFFFFF;
     overflow-x: hidden;
@@ -13,15 +14,22 @@ body{
             text-align: center;
             padding-top: 1%;
             padding-bottom: 1%;
+            @media (max-width: $small){
+                font-size: 14px;
+            }    
             a{
                 font-weight:700;
                 color: #FFFFFF;
             }
         }
+        
         .two{
             margin: 2% 9%;
             display: flex;
             justify-content: space-between;
+            @media (max-width:$small) {
+                font-size: 14px;
+            }
             input{
                 width: 550px;
                 height: 30px;
@@ -30,13 +38,24 @@ body{
                 outline: none;
                 padding-left: 1%;
                 border-radius: 6px;
+                @media (max-width:$small) {
+                    font-size: 10px;
+                    width: 350px;
+                    height: 25px;
+                }
             }
             .fa-solid{
                 margin-left: -26%;
                 margin-top: 7px;
+                @media (max-width:$small) {
+                    font-size: 10px;
+                }
             }
             select{
                 border: none;
+                @media (max-width:$small) {
+                    font-size: 10px;
+                }
             }
         }
         .three{
@@ -47,17 +66,36 @@ body{
             span{
                 font-size: 24px;
                 font-weight: bold;
+                @media (max-width:$small) {
+                    font-size: 16px;
+                }
             }
             .first{
                 display: flex;
                 gap: 50px;
                 margin-right: 5%;
                 list-style: none;
+                @media (max-width:$small) {
+                    display:none;
+                }
+            }
+            .firstly{
+                display: none;
+                @media (max-width:$small) {
+                    display:block;
+                    list-style: none;
+                    font-size: 14px;
+                    right: -100%;
+                    line-height: 20px;
+                }
             }
             .second{
                 display: flex;
                 list-style: none;
                 gap: 20px;
+                @media (max-width:$small) {
+                    font-size: 10px;
+                }
             }
         }
   } 
@@ -67,74 +105,140 @@ body{
     padding-left: 4%;
     height: 456px;
     color: #FFFFFF;
+    @media (max-width:$small) {
+        margin: 5%;
+        height: 360px;
+    }
     p{
         padding-top: 7%;
         margin-bottom: 4%;
+        @media (max-width:$small) {
+            font-size: 14px;
+        }
     i{
         margin-right: 28px;
         font-size: 50px;
+        @media (max-width:$small) {
+            font-size: 30px;
+        }
+    
     }
     }
     h1{
         font-size: 55px;
         margin-bottom: 4%;
         white-space: pre-line;
+        @media (max-width:$small) {
+            font-size: 20px;
+            margin-bottom: 10%;
+            margin-top: 7%;
+        }
     }
     img{
+        margin-top: -27.2.5%;
         float: right;
+        @media (max-width:$small) {
+            width: 360px;
+            height: 250px;
+        }
     }
     a{
         font-size: 18px;
         text-decoration: underline;
+        @media (max-width:$small) {
+            font-size: 10px;
+        }
     }
     .dot{
-        margin-top: 6%;
+        float: right;
+        margin-top: 60px;
+        @media (max-width:$small) {
+            display: none;
+        }
     }
   }
   aside{
-    margin-bottom: 5%;
-    margin-top:5%;    
-    img{
-        padding-left: 8%;
+    margin-bottom: 12%;
+    margin-top:5%; 
+    @media (max-width:$small) {
+       margin-top: 1%; 
     }
-  }
+    img{
+        padding-left:2%;
+        padding-right: 6%;
+        @media (max-width:$small) {
+            width: 62px;
+            padding-right:5.5%;
+         }
+     } 
+    }
   main{
-    margin-left: 9%;
-    margin-right: 9%;
-    .explore{
-        margin-top: 10%;
-        margin-bottom: 5%;
+    margin-left: 6%;
+    margin-right: 6%;
         h1{
         margin-bottom: 5%;
         font-weight: 900;
         font-size: 40px;
+        @media (max-width:$small) {
+            font-size: 20px; 
+            margin-bottom:3%;
+         }
         }
         a{
         float: right;
         font-size: 20px;
         color: #5AC0C0;
+        @media (max-width:$small) {
+            font-size: 10px;
+         }
         }
         img{
             margin-bottom: 10px;
             margin-left:10px;
-
+            @media (max-width:$small) {
+                display: block;
+                width: 550px;
+                height: 420px;
+                margin-left: 14px;
+            }
         }
-    }
+        
     .feminine{
-        margin-top: 2%;
+        margin-top: 10%;
+        display: block;
+        margin-right: 8%;
+        @media (max-width:$small) {
+            margin-top: 20%;
+        }
+    
         img{
             float: right;
-            margin-left: 20px;
+            margin-left: 10px;
+            
+            @media (max-width:$small) {
+                padding-left:20px;
+                width: 298px;
+                height: 320px;
+            }
         }
+        
         h3{
             font-size: 26px;
             white-space: pre-line;
             margin-bottom: 2%;
+            @media (max-width:$small) {
+                font-size: 20px;
+                margin-bottom: 5%;
+            }
         }
         p{
             color: #1e1e1e6f;
             white-space: pre-line;
             margin-bottom: 2%;
+            @media (max-width:$small) {
+                font-size: 16px;
+                margin-bottom: 5%;
+            }
         }
         button{
             width: 125px;
@@ -142,6 +246,10 @@ body{
             background: #C1DCDC;
             border: none;
             padding-right: 3%;
+            @media (max-width:$small) {
+                width: 100px;
+                font-size: 10px;
+            }
         }
     }
     .gadget{
@@ -155,6 +263,9 @@ body{
         height: 110px;
         background: #5AC0C0;
         transform: translate(-50%, -50%);
+        @media (max-width:$small) {
+           width: 1000px; 
+        }
         .cut{
             background: #C1DCDC;
             width: 90%;
@@ -162,6 +273,9 @@ body{
             box-sizing: border-box;
             border-right: 100px solid #02A0A0;
             border-bottom: 100px solid transparent;
+            @media (max-width:$small) {
+                
+            }
             h4{
                 margin-top: 4%;
                 margin-left: 3%;
@@ -213,6 +327,7 @@ body{
         margin-left: 3%;
         .imgs{
             float: right;
+
         }
         .imgss{
             float: right;
@@ -233,7 +348,7 @@ body{
             margin-top: 3%;
             margin-bottom: 3%;
             figure{
-                margin-left: 10px;
+                margin-left: 5px;
              figcaption{
                 margin-top: 1%;
                 font-weight: bold;

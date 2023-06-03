@@ -14,6 +14,11 @@ body header .one {
   padding-top: 1%;
   padding-bottom: 1%;
 }
+@media (max-width: 768px) {
+  body header .one {
+    font-size: 14px;
+  }
+}
 body header .one a {
   font-weight: 700;
   color: #FFFFFF;
@@ -22,6 +27,11 @@ body header .two {
   margin: 2% 9%;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 768px) {
+  body header .two {
+    font-size: 14px;
+  }
 }
 body header .two input {
   width: 550px;
@@ -32,12 +42,29 @@ body header .two input {
   padding-left: 1%;
   border-radius: 6px;
 }
+@media (max-width: 768px) {
+  body header .two input {
+    font-size: 10px;
+    width: 350px;
+    height: 25px;
+  }
+}
 body header .two .fa-solid {
   margin-left: -26%;
   margin-top: 7px;
 }
+@media (max-width: 768px) {
+  body header .two .fa-solid {
+    font-size: 10px;
+  }
+}
 body header .two select {
   border: none;
+}
+@media (max-width: 768px) {
+  body header .two select {
+    font-size: 10px;
+  }
 }
 body header .three {
   padding: 10px 9%;
@@ -49,16 +76,43 @@ body header .three span {
   font-size: 24px;
   font-weight: bold;
 }
+@media (max-width: 768px) {
+  body header .three span {
+    font-size: 16px;
+  }
+}
 body header .three .first {
   display: flex;
   gap: 50px;
   margin-right: 5%;
   list-style: none;
 }
+@media (max-width: 768px) {
+  body header .three .first {
+    display: none;
+  }
+}
+body header .three .firstly {
+  display: none;
+}
+@media (max-width: 768px) {
+  body header .three .firstly {
+    display: block;
+    list-style: none;
+    font-size: 14px;
+    right: -100%;
+    line-height: 20px;
+  }
+}
 body header .three .second {
   display: flex;
   list-style: none;
   gap: 20px;
+}
+@media (max-width: 768px) {
+  body header .three .second {
+    font-size: 10px;
+  }
 }
 body .hero {
   background: #000000;
@@ -67,74 +121,168 @@ body .hero {
   height: 456px;
   color: #FFFFFF;
 }
+@media (max-width: 768px) {
+  body .hero {
+    margin: 5%;
+    height: 360px;
+  }
+}
 body .hero p {
   padding-top: 7%;
   margin-bottom: 4%;
 }
+@media (max-width: 768px) {
+  body .hero p {
+    font-size: 14px;
+  }
+}
 body .hero p i {
   margin-right: 28px;
   font-size: 50px;
+}
+@media (max-width: 768px) {
+  body .hero p i {
+    font-size: 30px;
+  }
 }
 body .hero h1 {
   font-size: 55px;
   margin-bottom: 4%;
   white-space: pre-line;
 }
+@media (max-width: 768px) {
+  body .hero h1 {
+    font-size: 20px;
+    margin-bottom: 10%;
+    margin-top: 7%;
+  }
+}
 body .hero img {
+  margin-top: -27.2 0.5%;
   float: right;
+}
+@media (max-width: 768px) {
+  body .hero img {
+    width: 360px;
+    height: 250px;
+  }
 }
 body .hero a {
   font-size: 18px;
   text-decoration: underline;
 }
+@media (max-width: 768px) {
+  body .hero a {
+    font-size: 10px;
+  }
+}
 body .hero .dot {
-  margin-top: 6%;
+  float: right;
+  margin-top: 60px;
+}
+@media (max-width: 768px) {
+  body .hero .dot {
+    display: none;
+  }
 }
 body aside {
-  margin-bottom: 5%;
+  margin-bottom: 12%;
   margin-top: 5%;
 }
+@media (max-width: 768px) {
+  body aside {
+    margin-top: 1%;
+  }
+}
 body aside img {
-  padding-left: 8%;
+  padding-left: 2%;
+  padding-right: 6%;
+}
+@media (max-width: 768px) {
+  body aside img {
+    width: 62px;
+    padding-right: 5.5%;
+  }
 }
 body main {
-  margin-left: 9%;
-  margin-right: 9%;
+  margin-left: 6%;
+  margin-right: 6%;
 }
-body main .explore {
-  margin-top: 10%;
-  margin-bottom: 5%;
-}
-body main .explore h1 {
+body main h1 {
   margin-bottom: 5%;
   font-weight: 900;
   font-size: 40px;
 }
-body main .explore a {
+@media (max-width: 768px) {
+  body main h1 {
+    font-size: 20px;
+    margin-bottom: 3%;
+  }
+}
+body main a {
   float: right;
   font-size: 20px;
   color: #5AC0C0;
 }
-body main .explore img {
+@media (max-width: 768px) {
+  body main a {
+    font-size: 10px;
+  }
+}
+body main img {
   margin-bottom: 10px;
   margin-left: 10px;
 }
+@media (max-width: 768px) {
+  body main img {
+    display: block;
+    width: 550px;
+    height: 420px;
+    margin-left: 14px;
+  }
+}
 body main .feminine {
-  margin-top: 2%;
+  margin-top: 10%;
+  display: block;
+  margin-right: 8%;
+}
+@media (max-width: 768px) {
+  body main .feminine {
+    margin-top: 20%;
+  }
 }
 body main .feminine img {
   float: right;
-  margin-left: 20px;
+  margin-left: 10px;
+}
+@media (max-width: 768px) {
+  body main .feminine img {
+    padding-left: 20px;
+    width: 298px;
+    height: 320px;
+  }
 }
 body main .feminine h3 {
   font-size: 26px;
   white-space: pre-line;
   margin-bottom: 2%;
 }
+@media (max-width: 768px) {
+  body main .feminine h3 {
+    font-size: 20px;
+    margin-bottom: 5%;
+  }
+}
 body main .feminine p {
   color: rgba(30, 30, 30, 0.4352941176);
   white-space: pre-line;
   margin-bottom: 2%;
+}
+@media (max-width: 768px) {
+  body main .feminine p {
+    font-size: 16px;
+    margin-bottom: 5%;
+  }
 }
 body main .feminine button {
   width: 125px;
@@ -142,6 +290,12 @@ body main .feminine button {
   background: #C1DCDC;
   border: none;
   padding-right: 3%;
+}
+@media (max-width: 768px) {
+  body main .feminine button {
+    width: 100px;
+    font-size: 10px;
+  }
 }
 body main .gadget {
   margin-left: 50%;
@@ -154,6 +308,11 @@ body main .gadget {
   height: 110px;
   background: #5AC0C0;
   transform: translate(-50%, -50%);
+}
+@media (max-width: 768px) {
+  body main .gadget {
+    width: 1000px;
+  }
 }
 body main .gadget .cut {
   background: #C1DCDC;
@@ -234,7 +393,7 @@ body main .saved .images {
   margin-bottom: 3%;
 }
 body main .saved .images figure {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 body main .saved .images figure figcaption {
   margin-top: 1%;
