@@ -173,7 +173,7 @@ body{
      } 
     }
   main{
-    margin-left: 6%;
+    margin-left: 8%;
     margin-right: 6%;
         h1{
         margin-bottom: 5%;
@@ -188,6 +188,7 @@ body{
         float: right;
         font-size: 20px;
         color: #5AC0C0;
+        padding-right: 6%;
         @media (max-width:$small) {
             font-size: 10px;
          }
@@ -264,7 +265,9 @@ body{
         background: #5AC0C0;
         transform: translate(-50%, -50%);
         @media (max-width:$small) {
-           width: 1000px; 
+           width: 500px; 
+           margin-top: 20%;
+           height: 50px;
         }
         .cut{
             background: #C1DCDC;
@@ -274,7 +277,10 @@ body{
             border-right: 100px solid #02A0A0;
             border-bottom: 100px solid transparent;
             @media (max-width:$small) {
-                
+                width: 70%;
+                height: 50%;
+                border-right: 100px solid #02A0A0;
+                border-bottom: 100px solid transparent;
             }
             h4{
                 margin-top: 4%;
@@ -313,7 +319,7 @@ body{
         background: #02A0A0;
        }
        .featured{
-        margin-left: 1%;
+        margin-left: 2%;
         margin-top: 5px;
        } 
     }
@@ -327,12 +333,18 @@ body{
         margin-left: 3%;
         .imgs{
             float: right;
-
+            margin-right: 5%;
+        }
+        .imgsss{
+            float: right;
+            margin-right: 5%;
+            margin-left: 3%;
+            margin-top: -18.3rem;
         }
         .imgss{
             float: right;
-            margin-right: 1%;
-            margin-top: -17.7rem;
+            margin-left: 5%;
+            margin-top: -18.3rem;
         }
     }
     .saved{

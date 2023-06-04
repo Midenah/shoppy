@@ -205,7 +205,7 @@ body aside img {
   }
 }
 body main {
-  margin-left: 6%;
+  margin-left: 8%;
   margin-right: 6%;
 }
 body main h1 {
@@ -223,6 +223,7 @@ body main a {
   float: right;
   font-size: 20px;
   color: #5AC0C0;
+  padding-right: 6%;
 }
 @media (max-width: 768px) {
   body main a {
@@ -311,7 +312,9 @@ body main .gadget {
 }
 @media (max-width: 768px) {
   body main .gadget {
-    width: 1000px;
+    width: 500px;
+    margin-top: 20%;
+    height: 50px;
   }
 }
 body main .gadget .cut {
@@ -321,6 +324,14 @@ body main .gadget .cut {
   box-sizing: border-box;
   border-right: 100px solid #02A0A0;
   border-bottom: 100px solid transparent;
+}
+@media (max-width: 768px) {
+  body main .gadget .cut {
+    width: 70%;
+    height: 50%;
+    border-right: 100px solid #02A0A0;
+    border-bottom: 100px solid transparent;
+  }
 }
 body main .gadget .cut h4 {
   margin-top: 4%;
@@ -358,7 +369,7 @@ body main .new .pure {
   background: #02A0A0;
 }
 body main .new .featured {
-  margin-left: 1%;
+  margin-left: 2%;
   margin-top: 5px;
 }
 body main .arrival {
@@ -372,11 +383,18 @@ body main .img {
 }
 body main .img .imgs {
   float: right;
+  margin-right: 5%;
+}
+body main .img .imgsss {
+  float: right;
+  margin-right: 5%;
+  margin-left: 3%;
+  margin-top: -18.3rem;
 }
 body main .img .imgss {
   float: right;
-  margin-right: 1%;
-  margin-top: -17.7rem;
+  margin-left: 5%;
+  margin-top: -18.3rem;
 }
 body main .saved {
   margin-top: 10%;
