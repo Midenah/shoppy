@@ -45,7 +45,7 @@ body header .two input {
 @media (max-width: 768px) {
   body header .two input {
     font-size: 10px;
-    width: 350px;
+    width: 260px;
     height: 25px;
   }
 }
@@ -67,10 +67,9 @@ body header .two select {
   }
 }
 body header .three {
-  padding: 10px 9%;
+  padding: 30px 9%;
   display: flex;
   justify-content: space-between;
-  border: 1px solid #000000;
 }
 body header .three span {
   font-size: 24px;
@@ -92,18 +91,6 @@ body header .three .first {
     display: none;
   }
 }
-body header .three .firstly {
-  display: none;
-}
-@media (max-width: 768px) {
-  body header .three .firstly {
-    display: block;
-    list-style: none;
-    font-size: 14px;
-    right: -100%;
-    line-height: 20px;
-  }
-}
 body header .three .second {
   display: flex;
   list-style: none;
@@ -113,6 +100,33 @@ body header .three .second {
   body header .three .second {
     font-size: 10px;
   }
+}
+body header .three .firstly {
+  display: none;
+}
+@media (max-width: 768px) {
+  body header .three .firstly {
+    display: block;
+    position: absolute;
+    list-style: none;
+    font-size: 10px;
+    right: -100%;
+    top: 90px;
+    transition: all 0.5s ease;
+    line-height: 14px;
+  }
+}
+body header .three #solid {
+  display: none;
+}
+@media (max-width: 768px) {
+  body header .three #solid {
+    display: flex;
+    cursor: pointer;
+  }
+}
+body header .three .firstly.open {
+  right: 15%;
 }
 body .hero {
   background: #000000;
@@ -158,13 +172,13 @@ body .hero h1 {
   }
 }
 body .hero img {
-  margin-top: -27.2 0.5%;
+  margin-top: -27.3%;
   float: right;
 }
 @media (max-width: 768px) {
   body .hero img {
-    width: 360px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
   }
 }
 body .hero a {
@@ -176,37 +190,30 @@ body .hero a {
     font-size: 10px;
   }
 }
-body .hero .dot {
-  float: right;
-  margin-top: 60px;
-}
-@media (max-width: 768px) {
-  body .hero .dot {
-    display: none;
-  }
-}
-body aside {
+body figure {
   margin-bottom: 12%;
   margin-top: 5%;
+  display: block;
 }
 @media (max-width: 768px) {
-  body aside {
+  body figure {
     margin-top: 1%;
   }
 }
-body aside img {
+body figure img {
   padding-left: 2%;
   padding-right: 6%;
 }
 @media (max-width: 768px) {
-  body aside img {
-    width: 62px;
-    padding-right: 5.5%;
+  body figure img {
+    padding-left: 3%;
+    width: 200px;
   }
 }
 body main {
   margin-left: 8%;
   margin-right: 6%;
+  display: block;
 }
 body main h1 {
   margin-bottom: 5%;
@@ -236,56 +243,47 @@ body main img {
 }
 @media (max-width: 768px) {
   body main img {
-    display: block;
-    width: 550px;
-    height: 420px;
+    width: 300px;
+    height: 350px;
     margin-left: 14px;
   }
 }
-body main .feminine {
+body main .clothings {
   margin-top: 10%;
-  display: block;
-  margin-right: 8%;
+  display: flex;
 }
 @media (max-width: 768px) {
-  body main .feminine {
-    margin-top: 20%;
+  body main .clothings {
+    margin-top: 15%;
+    display: block;
   }
 }
-body main .feminine img {
-  float: right;
-  margin-left: 10px;
-}
-@media (max-width: 768px) {
-  body main .feminine img {
-    padding-left: 20px;
-    width: 298px;
-    height: 320px;
-  }
-}
-body main .feminine h3 {
+body main .clothings .tag h3 {
   font-size: 26px;
   white-space: pre-line;
-  margin-bottom: 2%;
+  margin-bottom: 15%;
 }
 @media (max-width: 768px) {
-  body main .feminine h3 {
-    font-size: 20px;
+  body main .clothings .tag h3 {
+    font-size: 24px;
     margin-bottom: 5%;
+    text-align: center;
   }
 }
-body main .feminine p {
+body main .clothings .tag p {
   color: rgba(30, 30, 30, 0.4352941176);
   white-space: pre-line;
-  margin-bottom: 2%;
+  margin-bottom: 15%;
+  line-height: 25px;
 }
 @media (max-width: 768px) {
-  body main .feminine p {
+  body main .clothings .tag p {
     font-size: 16px;
     margin-bottom: 5%;
+    text-align: center;
   }
 }
-body main .feminine button {
+body main .clothings .tag button {
   width: 125px;
   height: 30px;
   background: #C1DCDC;
@@ -293,31 +291,60 @@ body main .feminine button {
   padding-right: 3%;
 }
 @media (max-width: 768px) {
-  body main .feminine button {
+  body main .clothings .tag button {
     width: 100px;
     font-size: 10px;
+    margin-left: 40%;
+    margin-right: auto;
   }
 }
-body main .gadget {
-  margin-left: 50%;
-  margin-top: 30%;
+body main .clothings .wears {
+  margin-top: -3%;
+  display: flex;
+}
+body main .clothings .wears figure {
+  padding-left: 60px;
+}
+@media (max-width: 768px) {
+  body main .clothings .wears figure {
+    width: 248px;
+    height: 250px;
+    margin-top: 10%;
+    margin-bottom: 40%;
+    padding-left: 18%;
+  }
+}
+body main .clothings .wears figure figcaption {
+  margin-left: 15px;
+}
+@media (max-width: 768px) {
+  body main .clothings .wears .rest {
+    display: none;
+  }
+}
+body main .bar {
+  margin-left: 47%;
+  margin-top: 10%;
   margin-bottom: 6%;
   display: flex;
   top: 50%;
   left: 50%;
-  width: 1250px;
+  width: 1245px;
   height: 110px;
-  background: #5AC0C0;
+  background: #02A0A0;
   transform: translate(-50%, -50%);
 }
 @media (max-width: 768px) {
-  body main .gadget {
-    width: 500px;
-    margin-top: 20%;
-    height: 50px;
+  body main .bar {
+    width: 520px;
+    height: 60px;
+    display: block;
+    background: none;
+    margin-left: 58%;
+    margin-bottom: 20%;
   }
 }
-body main .gadget .cut {
+body main .bar .cut {
   background: #C1DCDC;
   width: 90%;
   height: 100%;
@@ -326,27 +353,37 @@ body main .gadget .cut {
   border-bottom: 100px solid transparent;
 }
 @media (max-width: 768px) {
-  body main .gadget .cut {
-    width: 70%;
-    height: 50%;
-    border-right: 100px solid #02A0A0;
-    border-bottom: 100px solid transparent;
+  body main .bar .cut {
+    width: 209px;
+    border-right: none;
+    border-bottom: none;
+    padding: 1%;
   }
 }
-body main .gadget .cut h4 {
+body main .bar .cut h4 {
   margin-top: 4%;
   margin-left: 3%;
 }
-body main .gadget .cut p {
+@media (max-width: 768px) {
+  body main .bar .cut h4 {
+    font-size: 12px;
+  }
+}
+body main .bar .cut p {
   margin-left: 3%;
 }
-body main .gadget .slash {
+@media (max-width: 768px) {
+  body main .bar .cut p {
+    font-size: 10px;
+  }
+}
+body main .bar .slash {
   background: #02A0A0;
   width: 40%;
   height: 100%;
   box-sizing: border-box;
 }
-body main .gadget .slash button {
+body main .bar .slash button {
   float: right;
   background: #000000;
   color: #FFFFFF;
@@ -355,6 +392,13 @@ body main .gadget .slash button {
   width: 80px;
   height: 30px;
   border-radius: 6px;
+}
+@media (max-width: 768px) {
+  body main .bar .slash button {
+    font-size: 8px;
+    margin-top: 5%;
+    margin-right: 10%;
+  }
 }
 body main .new {
   display: flex;
@@ -369,32 +413,58 @@ body main .new .pure {
   background: #02A0A0;
 }
 body main .new .featured {
-  margin-left: 2%;
+  margin-left: 1%;
   margin-top: 5px;
 }
 body main .arrival {
   margin-left: 3%;
-  margin-top: 2%;
+  margin-top: 1.5%;
   font-size: 28px;
-  margin-bottom: 3%;
+  margin-bottom: 2%;
 }
-body main .img {
-  margin-left: 3%;
+@media (max-width: 768px) {
+  body main .arrival {
+    font-size: 18px;
+  }
 }
-body main .img .imgs {
+@media (max-width: 768px) {
+  body main .img {
+    margin-left: 1%;
+  }
+}
+@media (max-width: 768px) {
+  body main .img .img1 {
+    margin-left: 15%;
+  }
+}
+body main .img .img2 {
   float: right;
-  margin-right: 5%;
+  margin-top: -615px;
 }
-body main .img .imgsss {
-  float: right;
-  margin-right: 5%;
-  margin-left: 3%;
-  margin-top: -18.3rem;
+@media (max-width: 768px) {
+  body main .img .img2 {
+    display: none;
+  }
 }
-body main .img .imgss {
+body main .img .img3 {
+  margin-left: -65px;
+}
+@media (max-width: 768px) {
+  body main .img .img3 {
+    margin-left: 15%;
+    margin-top: 18px;
+  }
+}
+body main .img .img4 {
   float: right;
-  margin-left: 5%;
-  margin-top: -18.3rem;
+  margin-top: -298px;
+}
+@media (max-width: 768px) {
+  body main .img .img4 {
+    float: none;
+    margin-left: 15%;
+    margin-top: 18px;
+  }
 }
 body main .saved {
   margin-top: 10%;
@@ -405,19 +475,35 @@ body main .saved p {
   font-size: 24px;
   font-weight: 600;
 }
+@media (max-width: 768px) {
+  body main .saved p {
+    font-size: 20px;
+  }
+}
 body main .saved .images {
   display: flex;
   margin-top: 3%;
   margin-bottom: 3%;
+}
+@media (max-width: 768px) {
+  body main .saved .images {
+    display: block;
+  }
 }
 body main .saved .images figure {
   margin-left: 5px;
 }
 body main .saved .images figure figcaption {
   margin-top: 1%;
+  margin-left: 5%;
   font-weight: bold;
   font-size: 18px;
   margin-bottom: 1%;
+}
+@media (max-width: 768px) {
+  body main .saved .images figure figcaption {
+    font-size: 16px;
+  }
 }
 body main .saved .images figure figcaption h6 {
   font-weight: normal;
@@ -426,6 +512,11 @@ body main .saved .images figure figcaption h6 {
   padding-left: 0;
   line-height: 18px;
   white-space: pre-line;
+}
+@media (max-width: 768px) {
+  body main .saved .images figure figcaption h6 {
+    font-size: 14px;
+  }
 }
 body main .saved .images figure button {
   color: #2283DC;
@@ -437,15 +528,29 @@ body main .saved .images figure button {
 }
 body footer {
   background: #000000;
-  height: 805px;
   color: #FFFFFF;
   margin-top: 10%;
   padding-top: 5%;
+}
+@media (max-width: 768px) {
+  body footer {
+    height: 1200px;
+  }
 }
 body footer .footer {
   padding-left: 8%;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 768px) {
+  body footer .footer {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  body footer .footer .left-footer {
+    margin-bottom: 5%;
+  }
 }
 body footer .footer .left-footer h5 {
   margin-right: 500px;
@@ -453,13 +558,28 @@ body footer .footer .left-footer h5 {
   font-size: 18px;
   margin-bottom: 3%;
 }
+@media (max-width: 768px) {
+  body footer .footer .left-footer h5 {
+    font-size: 16px;
+  }
+}
 body footer .footer .left-footer p {
   font-size: 16px;
   font-weight: 200;
   margin-bottom: 3%;
 }
+@media (max-width: 768px) {
+  body footer .footer .left-footer p {
+    font-size: 14px;
+  }
+}
 body footer .footer .left-footer a {
   font-size: 16px;
+}
+@media (max-width: 768px) {
+  body footer .footer .left-footer a {
+    font-size: 12px;
+  }
 }
 body footer .footer i {
   font-size: 40px;
@@ -470,37 +590,73 @@ body footer .footer .right-footer h5 {
   font-size: 18px;
   margin-bottom: 3%;
 }
+@media (max-width: 768px) {
+  body footer .footer .right-footer h5 {
+    font-size: 16px;
+  }
+}
 body footer .footer .right-footer p {
   font-size: 16px;
   font-weight: 200;
   margin-bottom: 3%;
 }
+@media (max-width: 768px) {
+  body footer .footer .right-footer p {
+    font-size: 14px;
+  }
+}
 body footer .footer .right-footer a {
   font-size: 16px;
 }
+@media (max-width: 768px) {
+  body footer .footer .right-footer a {
+    font-size: 12px;
+  }
+}
 body footer table {
   border: 1px solid rgba(255, 255, 255, 0.2235294118);
-  padding: 5%;
   width: 1510px;
-  padding-left: 5%;
   margin-top: 5%;
+  border-collapse: collapse;
+}
+@media (max-width: 768px) {
+  body footer table {
+    display: block;
+  }
 }
 body footer table tr {
   padding-left: 0;
+}
+@media (max-width: 768px) {
+  body footer table tr {
+    display: block;
+    padding-left: 10px;
+    flex-direction: column;
+  }
 }
 body footer table tr th {
   font-size: 16px;
   font-weight: 100;
   font-style: normal;
+  text-align: left;
+  padding-left: 4%;
+  padding-top: 2%;
   text-transform: uppercase;
 }
-body footer table tr .email {
-  padding-right: 5%;
+@media (max-width: 768px) {
+  body footer table tr th {
+    display: block;
+  }
 }
 body footer table tr td {
   font-size: 14px;
   padding-left: 4%;
   padding-top: 2%;
+}
+@media (max-width: 768px) {
+  body footer table tr td {
+    display: block;
+  }
 }
 body footer table tr td i {
   font-size: 20px;
@@ -510,14 +666,24 @@ body footer table tr .social {
   width: 250px;
   text-transform: uppercase;
 }
-body footer table tr .detail-img {
+body footer table tr .detailed-img {
   display: flex;
   margin-top: -80px;
   margin-left: 40px;
 }
+@media (max-width: 768px) {
+  body footer table tr .detailed-img {
+    margin-left: 50%;
+  }
+}
 body footer section {
   margin-top: 2%;
   margin-left: 8%;
+}
+@media (max-width: 768px) {
+  body footer section {
+    display: block;
+  }
 }
 body footer section p {
   font-weight: 200;
