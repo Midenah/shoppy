@@ -307,7 +307,6 @@ body figure {
 body figure img {
   padding-left: 2%;
   padding-right: 6%;
-  border: 1px solid #F5F5F5;
   border-radius: 16px;
 }
 @media (max-width: 768px) {
