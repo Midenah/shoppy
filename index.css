@@ -771,7 +771,7 @@ body main .saved .images figure figcaption {
 @media (max-width: 768px) {
   body main .saved .images figure figcaption {
     font-size: 16px;
-    margin-left: 13%;
+    margin-left: 18%;
   }
 }
 body main .saved .images figure figcaption h6 {
@@ -797,7 +797,7 @@ body main .saved .images figure button {
 }
 @media (max-width: 768px) {
   body main .saved .images figure button {
-    margin-left: 13%;
+    margin-left: 18%;
   }
 }
 body footer {
