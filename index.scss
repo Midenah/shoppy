@@ -15,7 +15,7 @@ body{
             padding-top: 1%;
             padding-bottom: 1%;
             @media (max-width: $small){
-                font-size: 14px;
+                font-size: 10px;
             }    
             a{
                 font-weight:700;
@@ -28,7 +28,7 @@ body{
             display: flex;
             justify-content: space-between;
             @media (max-width:$small) {
-                font-size: 14px;
+                font-size: 12px;
             }
             input{
                 width: 550px;
@@ -40,7 +40,7 @@ body{
                 border-radius: 6px;
                 @media (max-width:$small) {
                     font-size: 10px;
-                    width: 260px;
+                    width: 250px;
                     height: 25px;
                 }
             }
@@ -67,7 +67,7 @@ body{
                 font-size: 24px;
                 font-weight: bold;
                 @media (max-width:$small) {
-                    font-size: 16px;
+                    font-size: 14px;
                 }
             }
             .first{
@@ -87,6 +87,11 @@ body{
                 @media (max-width:$small) {
                     font-size: 10px;
                 }
+                li{
+                    @media (max-width:$small) {
+                        display: none;
+                    }
+                }
             }
             .firstly{
                 display: none;
@@ -95,8 +100,14 @@ body{
                     position: absolute;
                     list-style: none;
                     font-size: 10px;
-                    right: -100%;
+                    right: -1001%;
                     top:90px;
+                    background: #000000;
+                    color: #FFFFFF;
+                    width: 55px;
+                    height: 70px;
+                    border-radius: 18px;
+                    padding-left: 3%;
                     transition: all .50s ease;     
                     line-height: 14px;
                 }
@@ -109,7 +120,7 @@ body{
                 }
             }
             .firstly.open{
-                right: 15%;
+                right: 10%;
             }            
         }
   } 
@@ -153,7 +164,8 @@ body{
         float: right;
         @media (max-width:$small) {
             width: 300px;
-            height: 200px;
+            height: 180px;
+            margin-top: -40px;
         }
     }
     a{
@@ -177,7 +189,7 @@ body{
         padding-right: 6%;
         @media (max-width:$small) {
             padding-left:3%;
-            width:200px;
+            width:150px;
          }
      } 
     }
@@ -201,6 +213,7 @@ body{
         padding-right: 6%;
         @media (max-width:$small) {
             font-size: 10px;
+            padding-right: 12%;
          }
         }
         img{
@@ -209,7 +222,7 @@ body{
             @media (max-width:$small) {
                 width: 300px;
                 height: 350px;
-                margin-left: 14px;
+                margin-left: 74px;
             }
         }
         
@@ -266,10 +279,13 @@ body{
                 height: 250px;
                 margin-top: 10%;
                 margin-bottom: 40%;
-                padding-left: 18%;
+                padding-left: 0;
             }
             figcaption{
                 margin-left: 15px;
+                @media (max-width:$small) {
+                    margin-left: 70px;
+                }
             }
             }
             .rest{
@@ -296,8 +312,9 @@ body{
            height: 60px;
            display: block;
            background: none;
-           margin-left: 58%;
+           margin-left: 100%;
            margin-bottom: 20%;
+           margin-top: 18%;
         }
         .cut{
             background: #C1DCDC;
@@ -426,6 +443,9 @@ body{
             }
             figure{
                 margin-left: 5px;
+                @media (max-width:$small) {
+                    margin-left: 0;
+                }
              figcaption{
                 margin-top: 1%;
                 margin-left: 5%;
@@ -434,6 +454,7 @@ body{
                 margin-bottom: 1%;
                 @media (max-width: $small) {
                     font-size: 16px;
+                    margin-left: 20%;
                 }
                 h6{
                     font-weight: normal;
@@ -454,6 +475,9 @@ body{
                 width: 120px;
                 border-radius: 10px;
                 background: #FFFFFF;
+                @media (max-width: $small) {
+                    margin-left: 20%;
+                }
             }
         }
         }
@@ -466,9 +490,9 @@ body{
     margin-top: 10%;
     padding-top: 5%;
     @media (max-width: $small) {
-       height: 1200px;  
+       height: 810px;
     }
-    .footer{
+    .details{
         padding-left: 8%;
         display: flex;
         justify-content: space-between;
@@ -536,16 +560,13 @@ body{
         border: 1px solid #ffffff39;
         width: 1510px;
         margin-top: 5%;
-        border-collapse: collapse;
         @media (max-width:$small) { 
-            display: block;
+
         }
-        tr{
+        thead,tbody{
             padding-left: 0; 
             @media (max-width:$small) { 
-                display: block;
-                padding-left: 10px; 
-                flex-direction: column;
+            
             } 
             th{
                 font-size: 16px;
@@ -555,19 +576,15 @@ body{
                 padding-left: 4%;
                 padding-top: 2%;
                 text-transform: uppercase;
-                
                 @media (max-width:$small) { 
-                    display: block;
-                    
                 }
             }
-
             td{
                 font-size: 14px;
                 padding-left: 4%;
                 padding-top: 2%;
                 @media (max-width:$small) { 
-                    display: block;
+            
                 }
                 i{
                     font-size: 20px;
