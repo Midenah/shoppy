@@ -242,7 +242,7 @@ body main a {
   float: right;
   font-size: 20px;
   color: #5AC0C0;
-  padding-right: 6%;
+  padding-right: 3%;
 }
 @media (max-width: 768px) {
   body main a {
@@ -258,7 +258,7 @@ body main img {
   body main img {
     width: 300px;
     height: 350px;
-    margin-left: 74px;
+    margin-left: 55px;
   }
 }
 body main .clothings {
