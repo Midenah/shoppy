@@ -16,7 +16,10 @@ body{
             padding-bottom: 1%;
             @media (max-width: $small){
                 font-size: 10px;
-            }    
+            }  
+            @media screen {
+                
+            }  
             a{
                 font-weight:700;
                 color: #FFFFFF;
