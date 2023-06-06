@@ -7,6 +7,12 @@
 body{
     background: #FFFFFF;
     overflow-x: hidden;
+    @media (max-width: $small) {
+        overflow-x: hidden;
+    }
+    @media (max-width: $medium) {
+        overflow-x: hidden;
+    }
   header{
         .one{
             background: #000000;
@@ -17,9 +23,9 @@ body{
             @media (max-width: $small){
                 font-size: 10px;
             }  
-            @media screen {
-                
-            }  
+            @media (max-width: $medium) {
+                font-size: 10px;
+            }
             a{
                 font-weight:700;
                 color: #FFFFFF;
@@ -31,6 +37,9 @@ body{
             display: flex;
             justify-content: space-between;
             @media (max-width:$small) {
+                font-size: 12px;
+            }
+            @media (max-width: $medium) {
                 font-size: 12px;
             }
             input{
@@ -46,6 +55,11 @@ body{
                     width: 250px;
                     height: 25px;
                 }
+                @media (max-width: $medium) {
+                    font-size: 10px;
+                    width: 270px;
+                    height: 25px;
+                }
             }
             .fa-solid{
                 margin-left: -26%;
@@ -53,10 +67,16 @@ body{
                 @media (max-width:$small) {
                     font-size: 10px;
                 }
+                @media (max-width: $medium) {
+                    font-size: 10px;
+                }
             }
             select{
                 border: none;
                 @media (max-width:$small) {
+                    font-size: 10px;
+                }
+                @media (max-width: $medium) {
                     font-size: 10px;
                 }
             }
@@ -72,6 +92,9 @@ body{
                 @media (max-width:$small) {
                     font-size: 14px;
                 }
+                @media (max-width: $medium) {
+                    font-size: 14px;
+                }
             }
             .first{
                 display: flex;
@@ -80,6 +103,9 @@ body{
                 list-style: none;
                 @media (max-width:$small) {
                     display:none;
+                }
+                @media (max-width: $medium) {
+                    display: none;
                 }
             }
 
@@ -90,8 +116,14 @@ body{
                 @media (max-width:$small) {
                     font-size: 10px;
                 }
+                @media (max-width: $medium) {
+                    font-size: 10px;
+                }
                 li{
                     @media (max-width:$small) {
+                        display: none;
+                    }
+                    @media (max-width: $medium) {
                         display: none;
                     }
                 }
@@ -114,9 +146,29 @@ body{
                     transition: all .50s ease;     
                     line-height: 14px;
                 }
+                @media (max-width: $medium) {
+                    display:block;
+                    position: absolute;
+                    list-style: none;
+                    font-size: 10px;
+                    right: -1001%;
+                    top:90px;
+                    background: #000000;
+                    color: #FFFFFF;
+                    width: 55px;
+                    height: 70px;
+                    border-radius: 18px;
+                    padding-left: 3%;
+                    transition: all .50s ease;     
+                    line-height: 14px;
+                }
             }
             #solid{
                 display: none;
+                @media (max-width:$small) {
+                    display: flex;
+                    cursor: pointer;
+                }
                 @media (max-width:$small) {
                     display: flex;
                     cursor: pointer;
@@ -134,6 +186,10 @@ body{
     height: 456px;
     color: #FFFFFF;
     @media (max-width:$small) {
+        margin: 5%;
+        height: 360px;
+    }
+    @media (max-width:$medium) {
         margin: 5%;
         height: 360px;
     }
@@ -187,13 +243,22 @@ body{
     @media (max-width:$small) {
        margin-top: 1%; 
     }
+    @media (max-width: $medium) {
+        margin-top: 2%;
+    }
     img{
         padding-left:2%;
         padding-right: 6%;
+        border: 1px solid #F5F5F5;
+        border-radius: 16px;
         @media (max-width:$small) {
             padding-left:3%;
             width:150px;
          }
+         @media (max-width: $medium) {
+            padding-left: 3%;
+            width: 150px;
+        }
      } 
     }
   main{
@@ -208,6 +273,10 @@ body{
             font-size: 20px; 
             margin-bottom:3%;
          }
+         @media (max-width: $medium) {
+            font-size: 20px; 
+            margin-bottom:3%;
+        }
         }
         a{
         float: right;
@@ -218,11 +287,20 @@ body{
             font-size: 10px;
             padding-right: 12%;
          }
+         @media (max-width: $medium) {
+            font-size: 20px; 
+            padding-right: 12%;
+        }
         }
         img{
             margin-bottom: 10px;
             margin-left:10px;
             @media (max-width:$small) {
+                width: 300px;
+                height: 350px;
+                margin-left: 55px;
+            }
+            @media (max-width: $medium) {
                 width: 300px;
                 height: 350px;
                 margin-left: 55px;
@@ -236,12 +314,21 @@ body{
             margin-top: 15%;
             display: block;
         }
+        @media (max-width:$medium) {
+            margin-top: 15%;
+            display: block;
+        }
         .tag{
             h3{
                 font-size: 26px;
                 white-space: pre-line;
                 margin-bottom: 15%;
                 @media (max-width:$small) {
+                    font-size: 24px;
+                    margin-bottom: 5%;
+                    text-align: center;
+                }
+                @media (max-width:$medium) {
                     font-size: 24px;
                     margin-bottom: 5%;
                     text-align: center;
@@ -257,6 +344,11 @@ body{
                     margin-bottom: 5%;
                     text-align: center;
                 }
+                @media (max-width:$medium) {
+                    font-size: 16px;
+                    margin-bottom: 5%;
+                    text-align: center;
+                }
             }
             button{
                 width: 125px;
@@ -265,6 +357,12 @@ body{
                 border: none;
                 padding-right: 3%;
                 @media (max-width:$small) {
+                    width: 100px;
+                    font-size: 10px;
+                    margin-left: 40%;
+                    margin-right: auto;
+                }
+                @media (max-width:$medium) {
                     width: 100px;
                     font-size: 10px;
                     margin-left: 40%;
@@ -284,15 +382,28 @@ body{
                 margin-bottom: 40%;
                 padding-left: 0;
             }
+            @media (max-width:$medium) {
+                width: 248px;
+                height: 250px;
+                margin-top: 10%;
+                margin-bottom: 40%;
+                padding-left: 0;
+            }
             figcaption{
                 margin-left: 15px;
                 @media (max-width:$small) {
+                    margin-left: 70px;
+                }
+                @media (max-width:$medium) {
                     margin-left: 70px;
                 }
             }
             }
             .rest{
                 @media (max-width:$small) {
+                    display: none;
+                }
+                @media (max-width:$medium) {
                     display: none;
                 }
         }
@@ -319,6 +430,15 @@ body{
            margin-bottom: 20%;
            margin-top: 18%;
         }
+        @media (max-width:$medium) {
+            width: 520px; 
+           height: 60px;
+           display: block;
+           background: none;
+           margin-left: 100%;
+           margin-bottom: 20%;
+           margin-top: 18%;
+        }
         .cut{
             background: #C1DCDC;
             width: 90%;
@@ -332,10 +452,19 @@ body{
                 border-bottom: none;
                 padding: 1%;
             }
+            @media (max-width:$medium) {
+                width: 209px;
+                border-right:none;
+                border-bottom: none;
+                padding: 1%;
+            }
             h4{
                 margin-top: 4%;
                 margin-left: 3%;
                 @media (max-width:$small) {
+                font-size: 12px;
+                }
+                @media (max-width:$medium) {
                 font-size: 12px;
                 }
             }             
@@ -344,6 +473,9 @@ body{
                 @media (max-width:$small) {
                     font-size: 10px;
                     }
+                @media (max-width:$medium) {
+                     font-size: 10px;   
+                    }    
             } 
         }
         .slash{
@@ -365,6 +497,11 @@ body{
                     margin-top: 5%;
                     margin-right: 10%;
                     }
+                @media (max-width:$medium) {
+                    font-size: 8px;
+                    margin-top: 5%;
+                    margin-right: 10%;   
+                       }     
             }
         }
     }
@@ -392,14 +529,23 @@ body{
         @media (max-width:$small) {
             font-size: 18px;
         }
+        @media (max-width:$medium) {
+            font-size: 18px;   
+        }
     }
     .img{
         @media (max-width: $small) {
             margin-left: 1%;  
         }
+        @media (max-width:$medium) {
+            margin-left: 1%;   
+        }
         .img1{
             @media (max-width: $small) {
                 margin-left: 15%; 
+            }
+            @media (max-width:$medium) {
+                margin-left: 15%;  
             }
         }
         .img2{
@@ -408,12 +554,19 @@ body{
             @media (max-width:$small) {
                 display: none;
             }
+            @media (max-width:$medium) {
+                display: none;  
+            }
         }
         .img3{
             margin-left: -65px;
             @media (max-width:$small) {
                 margin-left: 15%;
                 margin-top: 18px;
+            }
+            @media (max-width:$medium) {
+                margin-left: 15%;
+                margin-top: 18px;  
             }
         }
         .img4{
@@ -423,6 +576,11 @@ body{
                 float: none;
                 margin-left: 15%;
                 margin-top: 18px;
+            }
+            @media (max-width:$medium) {
+                float: none;
+                margin-left: 15%;
+                margin-top: 18px;  
             }
         }
     }
@@ -436,6 +594,9 @@ body{
             @media (max-width: $small) {
                 font-size: 20px;
             }
+            @media (max-width: $medium) {
+                font-size: 20px;
+            }            
         }
         .images{
             display: flex;
@@ -444,6 +605,9 @@ body{
             @media (max-width: $small) {
                 display: block;  
             }
+            @media (max-width: $medium) {
+                display: block;
+            } 
             figure{
                 margin-left: 5px;
                 @media (max-width:$small) {
@@ -457,7 +621,7 @@ body{
                 margin-bottom: 1%;
                 @media (max-width: $small) {
                     font-size: 16px;
-                    margin-left: 20%;
+                    margin-left: 13%;
                 }
                 h6{
                     font-weight: normal;
@@ -479,7 +643,7 @@ body{
                 border-radius: 10px;
                 background: #FFFFFF;
                 @media (max-width: $small) {
-                    margin-left: 20%;
+                    margin-left: 13%;
                 }
             }
         }
