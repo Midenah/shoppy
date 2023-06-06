@@ -7,16 +7,6 @@ body {
   background: #FFFFFF;
   overflow-x: hidden;
 }
-@media (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-}
-@media (max-width: 991px) {
-  body {
-    overflow-x: hidden;
-  }
-}
 body header .one {
   background: #000000;
   color: #FFFFFF;
@@ -369,7 +359,7 @@ body main img {
   body main img {
     width: 300px;
     height: 350px;
-    margin-left: 55px;
+    margin-left: 20px;
   }
 }
 @media (max-width: 991px) {
