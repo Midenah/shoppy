@@ -29,6 +29,11 @@ body header .one {
     font-size: 14px;
   }
 }
+@media (min-width: 1024px) {
+  body header .one {
+    font-size: 14px;
+  }
+}
 body header .one a {
   font-weight: 700;
   color: #FFFFFF;
@@ -49,6 +54,11 @@ body header .two {
   }
 }
 @media (min-width: 992px) {
+  body header .two {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px) {
   body header .two {
     font-size: 16px;
   }
@@ -144,6 +154,11 @@ body header .three span {
     font-size: 16px;
   }
 }
+@media (min-width: 1024px) {
+  body header .three span {
+    font-size: 16px;
+  }
+}
 body header .three .first {
   display: flex;
   gap: 50px;
@@ -165,6 +180,11 @@ body header .three .first {
     display: flex;
   }
 }
+@media (min-width: 1024px) {
+  body header .three .first {
+    display: flex;
+  }
+}
 body header .three .second {
   display: flex;
   list-style: none;
@@ -181,6 +201,11 @@ body header .three .second {
   }
 }
 @media (min-width: 992px) {
+  body header .three .second {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px) {
   body header .three .second {
     font-size: 16px;
   }
@@ -239,6 +264,11 @@ body header .three .firstly {
     display: none;
   }
 }
+@media (min-width: 1024px) {
+  body header .three .firstly {
+    display: none;
+  }
+}
 body header .three #solid {
   display: none;
 }
@@ -259,8 +289,23 @@ body header .three #solid {
     display: none;
   }
 }
+@media (min-width: 1024px) {
+  body header .three #solid {
+    display: none;
+  }
+}
 body header .three .firstly.open {
   right: 10%;
+}
+@media (min-width: 992px) {
+  body header .three .firstly.open {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  body header .three .firstly.open {
+    display: none;
+  }
 }
 body .hero {
   background: #000000;
@@ -287,6 +332,12 @@ body .hero {
     height: 456px;
   }
 }
+@media (min-width: 1024px) {
+  body .hero {
+    margin: 9%;
+    height: 456px;
+  }
+}
 body .hero p {
   padding-top: 7%;
   margin-bottom: 4%;
@@ -302,6 +353,11 @@ body .hero p {
   }
 }
 @media (min-width: 992px) {
+  body .hero p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px) {
   body .hero p {
     font-size: 16px;
   }
@@ -341,6 +397,13 @@ body .hero h1 {
     margin-top: 0;
   }
 }
+@media (min-width: 1024px) {
+  body .hero h1 {
+    font-size: 55px;
+    margin-bottom: 4%;
+    margin-top: 0;
+  }
+}
 body .hero .voucher {
   margin-top: -27.3%;
   float: right;
@@ -359,6 +422,13 @@ body .hero .voucher {
   }
 }
 @media (min-width: 992px) {
+  body .hero .voucher {
+    width: 600px;
+    margin-top: -25%;
+    height: 350px;
+  }
+}
+@media (min-width: 1024px) {
   body .hero .voucher {
     width: 600px;
     margin-top: -25%;
@@ -394,6 +464,11 @@ body .icons {
     margin-top: 5%;
   }
 }
+@media (min-width: 1024px) {
+  body .icons {
+    margin-top: 5%;
+  }
+}
 body .icons img {
   padding-left: 2%;
   padding-right: 6%;
@@ -412,6 +487,12 @@ body .icons img {
   }
 }
 @media (min-width: 992px) {
+  body .icons img {
+    padding-left: 2%;
+    width: 120px;
+  }
+}
+@media (min-width: 1024px) {
   body .icons img {
     padding-left: 2%;
     width: 120px;
@@ -445,6 +526,12 @@ body main h1 {
     margin-bottom: 5%;
   }
 }
+@media (min-width: 1024px) {
+  body main h1 {
+    font-size: 40px;
+    margin-bottom: 5%;
+  }
+}
 body main a {
   float: right;
   font-size: 20px;
@@ -464,6 +551,12 @@ body main a {
   }
 }
 @media (min-width: 992px) {
+  body main a {
+    font-size: 20px;
+    padding-right: 3%;
+  }
+}
+@media (min-width: 1024px) {
   body main a {
     font-size: 20px;
     padding-right: 3%;
@@ -489,14 +582,27 @@ body main img {
 }
 @media (min-width: 992px) {
   body main img {
-    width: 400px;
+    width: 450px;
+    height: 429px;
+    margin-left: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  body main img {
+    width: 450px;
     height: 429px;
     margin-left: 10px;
   }
 }
 @media (min-width: 992px) {
   body main .gad {
-    width: 820px;
+    width: 800px;
+    height: 427px;
+  }
+}
+@media (min-width: 1024px) {
+  body main .gad {
+    width: 800px;
     height: 427px;
   }
 }
@@ -517,6 +623,12 @@ body main .clothings {
   }
 }
 @media (min-width: 992px) {
+  body main .clothings {
+    margin-top: 10%;
+    display: flex;
+  }
+}
+@media (min-width: 1024px) {
   body main .clothings {
     margin-top: 10%;
     display: flex;
@@ -548,6 +660,13 @@ body main .clothings .tag h3 {
     margin-top: 15%;
   }
 }
+@media (min-width: 1024px) {
+  body main .clothings .tag h3 {
+    font-size: 26px;
+    margin-left: 0;
+    margin-top: 15%;
+  }
+}
 body main .clothings .tag p {
   color: rgba(30, 30, 30, 0.4352941176);
   white-space: pre-line;
@@ -569,6 +688,12 @@ body main .clothings .tag p {
   }
 }
 @media (min-width: 992px) {
+  body main .clothings .tag p {
+    margin-bottom: 15%;
+    margin-left: 0;
+  }
+}
+@media (min-width: 1024px) {
   body main .clothings .tag p {
     margin-bottom: 15%;
     margin-left: 0;
@@ -604,6 +729,13 @@ body main .clothings .tag button {
     margin-left: 0;
   }
 }
+@media (min-width: 1024px) {
+  body main .clothings .tag button {
+    width: 125px;
+    font-size: 16px;
+    margin-left: 0;
+  }
+}
 body main .clothings .wears {
   margin-top: 3%;
   display: flex;
@@ -623,7 +755,18 @@ body main .clothings .wears {
     display: flex;
   }
 }
+@media (min-width: 1024px) {
+  body main .clothings .wears {
+    display: flex;
+  }
+}
 @media (min-width: 992px) {
+  body main .clothings .wears figure {
+    margin-left: 5%;
+    margin-right: 4%;
+  }
+}
+@media (min-width: 1024px) {
   body main .clothings .wears figure {
     margin-left: 5%;
     margin-right: 4%;
@@ -658,6 +801,14 @@ body main .clothings .wears figure img {
     margin-bottom: 10%;
   }
 }
+@media (min-width: 1024px) {
+  body main .clothings .wears figure img {
+    width: 278px;
+    height: 338px;
+    margin-top: 0;
+    margin-bottom: 10%;
+  }
+}
 body main .clothings .wears figure figcaption {
   margin-left: 15px;
 }
@@ -672,6 +823,11 @@ body main .clothings .wears figure figcaption {
   }
 }
 @media (min-width: 992px) {
+  body main .clothings .wears figure figcaption {
+    margin-left: 15px;
+  }
+}
+@media (min-width: 1024px) {
   body main .clothings .wears figure figcaption {
     margin-left: 15px;
   }
@@ -722,6 +878,18 @@ body main .bar {
     height: 110px;
   }
 }
+@media (min-width: 1024px) {
+  body main .bar {
+    margin-left: 47%;
+    margin-top: 15%;
+    margin-bottom: 6%;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    width: 1245px;
+    height: 110px;
+  }
+}
 body main .bar .cut {
   background: #C1DCDC;
   width: 90%;
@@ -754,6 +922,14 @@ body main .bar .cut {
     padding: 0;
   }
 }
+@media (min-width: 1024px) {
+  body main .bar .cut {
+    border-right: 100px solid #02A0A0;
+    border-bottom: 100px solid transparent;
+    width: 90%;
+    padding: 0;
+  }
+}
 body main .bar .cut h4 {
   margin-top: 4%;
   margin-left: 3%;
@@ -773,6 +949,11 @@ body main .bar .cut h4 {
     font-size: 16px;
   }
 }
+@media (min-width: 1024px) {
+  body main .bar .cut h4 {
+    font-size: 16px;
+  }
+}
 body main .bar .cut p {
   margin-left: 3%;
 }
@@ -787,6 +968,11 @@ body main .bar .cut p {
   }
 }
 @media (min-width: 992px) {
+  body main .bar .cut p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px) {
   body main .bar .cut p {
     font-size: 16px;
   }
@@ -822,6 +1008,13 @@ body main .bar .slash button {
   }
 }
 @media (min-width: 992px) {
+  body main .bar .slash button {
+    font-size: 1opx;
+    margin-top: 12%;
+    margin-right: 5%;
+  }
+}
+@media (min-width: 1024px) {
   body main .bar .slash button {
     font-size: 1opx;
     margin-top: 12%;
