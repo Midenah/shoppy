@@ -1,7 +1,7 @@
-let bar =document.querySelector('#solid');
-let nav =document.querySelector('.firstly');
+let bar =document.querySelector('#menu-bar');
+let menu =document.querySelector('.alt-menu');
 
 bar.onclick = () => {
     bar.classList.toggle("fa-bar");
-    nav.classList.toggle("open");
+    menu.classList.toggle("show");
 };
