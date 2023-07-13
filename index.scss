@@ -21,6 +21,9 @@ body{
         width: 100%;
         overflow-x: hidden;
         }
+        @include respond(medium) {
+             width: 100%;   
+        } 
         .top-nav{
             background: #000000;
             color: #FFFFFF;
@@ -48,7 +51,7 @@ body{
             @include respond(small) {
                 margin: 0;
                 padding: 15px 20px;
-            }
+            } 
                 input{
                 position: relative;
                 width: 550px;
@@ -65,15 +68,18 @@ body{
                 @include respond(small) {
                     display: none;
                   }
+                  @include respond(medium) {
+                    display: none;
+                  } 
                 }
             .fa-solid{
                 position: absolute;
                 right: 450px;
                 font-size: 16px;
                 margin-top: 7px;
-                @include respond(small) {
-                    display: none;
-                  }
+                  @include respond(large) {
+                    right: 200px;
+                  }   
             }
         select{
                 border: none;
@@ -115,6 +121,12 @@ body{
                 @include respond(small) {
                     display: none;
                   }
+                  @include respond(medium) {
+                    display: none;
+                  } 
+                  @include respond(large) {
+                    gap: 40px;
+                  } 
                 li {
                     &:hover{
                         text-decoration: underline;
@@ -129,8 +141,13 @@ body{
                 list-style: none;
                 gap: 25px;
                 align-items: center;
-                @include respond(small) {
-                display: none;
+                .seller{
+                    @include respond(small) {
+                        display: none;
+                    } 
+                    @include respond(medium) {
+                        display: none;
+                    } 
                 }
                 .fa-cart-shopping{
                     position: relative;
@@ -164,10 +181,23 @@ body{
                     padding: 10px;
                     border-radius: 10px;
                 }
+                @include respond(medium) {
+                    display: block;
+                    list-style: none;
+                    background: #000000;
+                    color: #FFFFFF;
+                    width: 110px;
+                    padding: 15px;
+                    border-radius: 10px;
+                } 
             }
             #menu-bar{
                 display: none;
                 @include respond(small) {
+                    display: flex;
+                    cursor: pointer;
+                }
+                @include respond(medium) {
                     display: flex;
                     cursor: pointer;
                 }
@@ -182,7 +212,9 @@ body{
     @include respond(small) {
       padding: 1.5rem 1.5rem;
     }
-
+    @include respond(medium) {
+        padding: 1.5rem 1.5rem;
+      }
     .hero-content {
       padding: 4rem 4.7rem;
       background-color: #000;
@@ -192,6 +224,10 @@ body{
       place-items: center center;
       gap: 2rem;
       @include respond(small) {
+        padding: 1.5rem 1.5rem;
+        grid-template-columns: repeat(1, 1fr);
+      }
+      @include respond(medium) {
         padding: 1.5rem 1.5rem;
         grid-template-columns: repeat(1, 1fr);
       }
@@ -211,10 +247,17 @@ body{
                 gap: 1rem;
                 margin-bottom: 2rem;
             }
+            @include respond(medium) {
+                gap: 1rem;
+                margin-bottom: 2rem;
+            }
             .fa-apple {
               font-size: 4rem;
               @include respond(small) {
                 font-size: 2rem;
+              }
+              @include respond(medium) {
+                font-size: 3rem;
               }
             }
             span {
@@ -229,6 +272,10 @@ body{
               font-size: 43px;
               margin-bottom: 2rem;
             }
+            @include respond(medium) {
+                font-size: 53px;
+                margin-bottom: 2rem;
+              }
           }
         
         .hero-cta {
@@ -240,6 +287,17 @@ body{
             text-underline-offset: 10px;
             color: #ffffff;
           }
+        }
+      }
+      img{
+        @include respond(small) {
+            width: 400px;
+        }
+        @include respond(medium) {
+            width: 100%;
+        }
+        @include respond(large) {
+            width: 430px;
         }
       }
     }
@@ -256,6 +314,12 @@ body{
         margin-bottom: 2rem;
         margin-top: 2rem;
         row-gap: 15px;
+      }
+      @include respond(medium) {
+        flex-direction: column;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        row-gap: 15px;
       } 
      div{
         height: 100px;
@@ -266,13 +330,19 @@ body{
         @include respond(small) {
             width: 80%;
           }
+          @include respond(medium) {
+            width: 80%;
+          }
     img{
         width: 90%;
         height: 60px;
         margin: auto; 
         @include respond(small) {
                width: 40%; 
-        }  
+        } 
+        @include respond(medium) {
+            width: 40%; 
+     }   
      } 
     }
     }
@@ -280,31 +350,60 @@ body{
     margin-left: 8rem;
     margin-right: 5rem;
     display: block;
+    align-items: center;
+    @include respond(small) {
+       margin-left: 2rem;     
+    }
+    @include respond(medium) {
+        margin-left: 2rem;     
+     }
+     @include respond(large) {
+        margin-left: 6rem;     
+     }
     .explore{
+        @include respond(small) {
+          margin-top: 6rem;  
+        }
+        @include respond(medium) {
+            margin-top: 8rem;  
+          }
         .explore-header{
         h1{
         margin-bottom: 5rem;
         font-weight: 900;
         font-size: 40px;
+        @include respond(small) {
+            font-size: 30px;
+        }
+        @include respond(medium) {
+            font-size: 36px;
+        }
         }
         a{
         float: right;
         font-size: 20px;
         color: #5AC0C0;
         padding-right: 3rem;
+        @include respond(small) {
+           font-size: 16px; 
+        }
+        @include respond(medium) {
+            font-size: 18px; 
+         }
         }
       }
       .explore-images{
+        align-items: center;
         img{
             margin-bottom: 10px;
             margin-left:10px; 
-        }
-        .large-image{
             @include respond(small) {
-              width: 398px;
-              height: 450px;  
+                width: 100%;
             }
-        }
+            @include respond(medium) {
+                width: 100%;
+            }
+        }        
     }
     }
     .clothing{
@@ -312,11 +411,17 @@ body{
         display: flex;
         align-items: center;
         @include respond(small) {
-                display: block;
+         display: block;
         }
+        @include respond(medium) {
+            flex-direction: column;
+           }
         .clothing-details{
             margin-bottom: 7rem;
             margin-right: 40px;
+            @include respond(small) {
+            text-align: center;
+            }
             h3{
                 font-size: 26px;
                 white-space: pre-line;
@@ -343,27 +448,47 @@ body{
         .wears{
             display: flex;
             align-items: center;
+            @include respond(medium) {
+                display: block;
+               }
             i{
                 background: #C1DCDC;
                 width: 40px;
                 height: 15px;
                 padding: 5px;
+                &:hover{
+                    cursor: pointer;
+                }
+                @include respond(small) {
+                    margin-left: 16rem; 
+                } 
+                @include respond(medium) {
+                    display: none;
+                } 
+                   
             }
         figure{
             margin-left:40px;
             @include respond(small) {
-                margin-left: 1px;
+                margin-left: 1px; 
             }
+            @include respond(large) {
+                margin-left: 10px; 
+            }
+           
             img{
                 width: 298px;
                 height: 338px;
+                @include respond(small) {
+                    width: 100%;
+                }
         }
             figcaption{
                 margin-left: 15px;
                 
             }
         }
-        .rest-figure{
+        #rest-figure{
             @include respond(small) {
                 display: none;
             }
@@ -380,15 +505,27 @@ body{
         width: 1260px;
         height: 110px;
         background: #02A0A0;
+        align-items: center;
         transform: translate(-50%, -50%);
         @include respond(small) {
          left: 0.5rem; 
          display: block;
-         width: 900px;
+         width: 100%;
          height: 70px;
-         transform: none;
          background: none;
-        }        
+        }      
+        @include respond(medium) {
+            left: 5.5rem;
+            display: block;
+            width: 100%;
+            height: 90px;
+            transform: none;
+            background: none;
+        }    
+        @include respond(large) {
+            width: 1100px;
+            left: 34rem;
+        }    
         .discount-details{
             background: #C1DCDC;
             width: 90%;
@@ -397,6 +534,11 @@ body{
             border-right: 100px solid #02A0A0;
             border-bottom: 100px solid transparent;
             @include respond(small) {
+                width: 40%;
+                border-right: none;
+                border-bottom: none;
+            }
+            @include respond(medium) {
                 width: 40%;
                 border-right: none;
                 border-bottom: none;
@@ -424,11 +566,11 @@ body{
                 height: 30px;
                 border-radius: 6px;
                 @include respond(small) {
-                    float: none;
-                    margin-left: 8rem;
-                    margin-top: 20px;
+                    align-items: center;
                 } 
-                
+                @include respond(medium) {
+                    align-items: center;
+                }   
             }
         }
     }
@@ -437,7 +579,6 @@ body{
     .new-arrival-details{
         display: flex;
         color: #02A0A0;
-    }    
        .border{
         border: 1px solid;
         width: 16px;
@@ -459,13 +600,19 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 2.2rem;
+        gap: 1rem;
         @include respond(small) {
             flex-direction: column;
-      }
+        }
+        @include respond(medium) {
+        flex-direction: column;
+        }
+        @include respond(large) {
+            margin-left: 23rem;
+            }
       .left-image {
         flex-basis: 50%;
-        img {
+        .img {
           width: 100%;
         }
     }
@@ -475,14 +622,14 @@ body{
       flex-direction: column;
       .img1 {
         width: 100%;
-        height: 100%;
-        margin-bottom: 6rem;
+        margin-bottom: 25px;
       }
       .small-images {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 5px;
+        gap: 1rem;
+        margin-right: 3rem;
         @include respond(small) {
           flex-direction: column;
         }
@@ -490,13 +637,15 @@ body{
         .img4 {
           flex-basis: 50%;
           @include respond(small) {
+            margin-left: 6rem;
             width: 100%;
           }
         }
       }
     }
     }
-    .saved-products{
+}
+.saved-products{
         margin-top: 10rem;
         padding: 2.5rem;
         border:1px solid#e8e5e5;
@@ -508,25 +657,36 @@ body{
             display: flex;
             margin-top: 2rem;
             margin-bottom: 2rem;
+            @include respond(small) {
+                flex-direction: column;
+          }
+          @include respond(medium) {
+            flex-direction: column;
+      }
+            
             img{
                 margin-left: 15px;
                 width: 300px;
                 height: 360px;
+                @include respond(small) {
+                    width: 100%;
+              }
+              @include respond(medium) {
+                width: 100%;
+          }
             }
              figcaption{
                 margin-top: 10px;
                 margin-left: 1.5rem;
                 font-weight: bold;
                 font-size: 18px;
-                margin-bottom: 1rem;
-               
+                margin-bottom: 1rem;             
                 h6{
                     font-weight: normal;
                     font-size: 16px;
                     padding:5px;
                     line-height: 18px;
                     white-space: pre-line;
-                   
                 }            
             }
             button{
@@ -537,6 +697,12 @@ body{
                 border-radius: 10px;
                 margin-left: 20px;
                 background: #FFFFFF; 
+                @include respond(small) {
+                    margin-bottom: 2rem;
+              } 
+              @include respond(medium) {
+                margin-bottom: 2rem;
+          }  
             }
         }
     }
@@ -555,8 +721,19 @@ body{
         padding-left: 125px;
         padding-bottom: 50px;
         justify-content: space-between;
-       
+        @include respond(small) {
+            flex-direction: column;
+      }  
+      @include respond(medium) {
+        flex-direction: column;
+  }         
         .left-details{
+            @include respond(small) {
+            margin-bottom: 3rem;
+            } 
+            @include respond(medium) {
+                margin-bottom: 3rem;
+                } 
             h5{
                 margin-right: 500px;
                 font-weight: 200;
@@ -612,7 +789,15 @@ body{
         margin-top: 4rem;
         margin-bottom: 4rem;
         display: flex;   
-        gap: 90px;     
+        gap: 90px; 
+        @include respond(small) {
+            flex-direction: column;
+            gap: 20px;
+      }  
+      @include respond(medium) {
+        flex-direction: column;
+        gap: 20px;
+  }    
        
         ul{
             list-style: none;
