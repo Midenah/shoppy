@@ -141,14 +141,12 @@ body{
                 list-style: none;
                 gap: 25px;
                 align-items: center;
-                .seller{
                     @include respond(small) {
                         display: none;
                     } 
                     @include respond(medium) {
                         display: none;
                     } 
-                }
                 .fa-cart-shopping{
                     position: relative;
                     padding-right: 10px;
@@ -291,14 +289,12 @@ body{
       }
       img{
         @include respond(small) {
-            width: 400px;
+            width: 100%;
         }
         @include respond(medium) {
             width: 100%;
         }
-        @include respond(large) {
-            width: 430px;
-        }
+        
       }
     }
   }
@@ -508,7 +504,7 @@ body{
         align-items: center;
         transform: translate(-50%, -50%);
         @include respond(small) {
-         left: 0.5rem; 
+         left: 33rem;
          display: block;
          width: 100%;
          height: 70px;
@@ -603,17 +599,21 @@ body{
         gap: 1rem;
         @include respond(small) {
             flex-direction: column;
+            margin-left: 16rem;
         }
         @include respond(medium) {
         flex-direction: column;
         }
         @include respond(large) {
-            margin-left: 23rem;
+            
             }
       .left-image {
         flex-basis: 50%;
         .img {
           width: 100%;
+          @include respond(small) {
+            display: none;
+          }
         }
     }
     .right-image-group {
