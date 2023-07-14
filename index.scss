@@ -672,6 +672,11 @@ body{
         padding: 2.5rem;
         border:1px solid#e8e5e5;
         align-items: center;
+        @include respond(small) {
+            border: none;
+            padding: 1rem;
+        }
+
         p{
             font-size: 24px;
             font-weight: 600;   
@@ -690,12 +695,7 @@ body{
                 margin-left: 15px;
                 width: 300px;
                 height: 360px;
-                @include respond(small) {
-                    
-              }
-              @include respond(medium) {
                 
-            }
             @include respond(large) {
                 width: 180px;
                 height: 260px;

@@ -801,6 +801,12 @@ body main .saved-products {
   border: 1px solid #e8e5e5;
   align-items: center;
 }
+@media (max-width: 768px) {
+  body main .saved-products {
+    border: none;
+    padding: 1rem;
+  }
+}
 body main .saved-products p {
   font-size: 24px;
   font-weight: 600;
