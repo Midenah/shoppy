@@ -171,37 +171,45 @@ body{
             .alt-menu{
                 display: none;
                 @include respond(small) {
-                    display: block;
+                    position: absolute;
+                    display: flex;
                     list-style: none;
                     background: #000000;
                     color: #FFFFFF;
                     width: 100px;
                     padding: 10px;
                     border-radius: 10px;
+                    right: -1001%;
+                    flex-direction: column;
+                    transition:  all .30s ease;
                 }
                 @include respond(medium) {
-                    display: block;
+                    position: absolute;
+                    display: flex;
                     list-style: none;
                     background: #000000;
                     color: #FFFFFF;
-                    width: 110px;
-                    padding: 15px;
+                    width: 100px;
+                    padding: 10px;
                     border-radius: 10px;
+                    right: -1001%;
+                    flex-direction: column;
+                    transition:  all .30s ease;
                 } 
             }
-            #menu-bar{
+            #menu{
                 display: none;
                 @include respond(small) {
-                    display: flex;
+                    display: block;
                     cursor: pointer;
                 }
                 @include respond(medium) {
-                    display: flex;
+                    display: block;
                     cursor: pointer;
                 }
             }
             .show{
-                right: 1000px;
+                right: 4%;
             }            
         }
   } 
@@ -512,16 +520,15 @@ body{
         left: 40rem;
         width: 1260px;
         height: 110px;
-        background: #02A0A0;
-        align-items: center;
+        background: #02A0A0; 
         transform: translate(-50%, -50%);  
-           
-        @include respond(medium) {
-            left: 5.5rem;
+
+        @include respond(small) {
             display: block;
-            width: 100%;
-            height: 90px;
-            transform: none;
+            background: none;
+       }
+        @include respond(medium) {
+            display: block;
             background: none;
         } 
         @include respond(large) {
@@ -536,6 +543,7 @@ body{
             background: #C1DCDC;
             width: 90%;
             height: 100%;
+            align-items: center;
             box-sizing: border-box;
             border-right: 100px solid #02A0A0;
             border-bottom: 100px solid transparent;
@@ -552,7 +560,7 @@ body{
             h5{
                 margin-top: 25px;
                 margin-left: 24px;
-        }            
+            }            
             p{
                 margin-left: 24px;
             } 
@@ -583,7 +591,7 @@ body{
     .new-arrival{
         margin-top: 20px; 
         align-items: center;
-
+        width: 100%;
     .new-arrival-details{
         display: flex;
         color: #02A0A0;
@@ -611,26 +619,21 @@ body{
         gap: 2rem;
         @include respond(small) {
             flex-direction: column;
+            margin-left: 11rem;
         }
         @include respond(medium) {
         flex-direction: column;
+        margin-right: 12rem;
         }
+        @include respond(larger) {
+            gap: 0.1rem;
+            margin-left: 12rem;
+            }
       .left-image {
         flex-basis: 50%;
         .img{
             align-items: center;
-            justify-content: center;
-            @include respond(medium) {
-            margin-right: 16rem; 
-            
-             }
-          @include respond(large) {
-           width:50px; 
-           
-        }
-        @include respond(larger) {
-        
-        }
+            justify-content: center;           
         }
     }
     .right-image-group {
@@ -640,8 +643,7 @@ body{
       .img1 {
         width: 100%;
         margin-bottom: 25px;
-        @include respond(large) {
-            
+        @include respond(large) {  
           }
       }
       .small-images {
@@ -669,6 +671,7 @@ body{
         margin-top: 10rem;
         padding: 2.5rem;
         border:1px solid#e8e5e5;
+        align-items: center;
         p{
             font-size: 24px;
             font-weight: 600;   
@@ -688,10 +691,10 @@ body{
                 width: 300px;
                 height: 360px;
                 @include respond(small) {
-                    width: 100%;
+                    
               }
               @include respond(medium) {
-                width: 100%;
+                
             }
             @include respond(large) {
                 width: 180px;

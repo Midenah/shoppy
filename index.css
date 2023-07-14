@@ -201,43 +201,51 @@ body header .bottom-nav .alt-menu {
 }
 @media (max-width: 768px) {
   body header .bottom-nav .alt-menu {
-    display: block;
+    position: absolute;
+    display: flex;
     list-style: none;
     background: #000000;
     color: #FFFFFF;
     width: 100px;
     padding: 10px;
     border-radius: 10px;
+    right: -1001%;
+    flex-direction: column;
+    transition: all 0.3s ease;
   }
 }
 @media (max-width: 991px) {
   body header .bottom-nav .alt-menu {
-    display: block;
+    position: absolute;
+    display: flex;
     list-style: none;
     background: #000000;
     color: #FFFFFF;
-    width: 110px;
-    padding: 15px;
+    width: 100px;
+    padding: 10px;
     border-radius: 10px;
+    right: -1001%;
+    flex-direction: column;
+    transition: all 0.3s ease;
   }
 }
-body header .bottom-nav #menu-bar {
+body header .bottom-nav #menu {
   display: none;
 }
 @media (max-width: 768px) {
-  body header .bottom-nav #menu-bar {
-    display: flex;
+  body header .bottom-nav #menu {
+    display: block;
     cursor: pointer;
   }
 }
 @media (max-width: 991px) {
-  body header .bottom-nav #menu-bar {
-    display: flex;
+  body header .bottom-nav #menu {
+    display: block;
     cursor: pointer;
   }
 }
 body header .bottom-nav .show {
-  right: 1000px;
+  right: 4%;
 }
 body .hero {
   padding: 3rem 6rem;
@@ -618,16 +626,17 @@ body main .discount-bar {
   width: 1260px;
   height: 110px;
   background: #02A0A0;
-  align-items: center;
   transform: translate(-50%, -50%);
+}
+@media (max-width: 768px) {
+  body main .discount-bar {
+    display: block;
+    background: none;
+  }
 }
 @media (max-width: 991px) {
   body main .discount-bar {
-    left: 5.5rem;
     display: block;
-    width: 100%;
-    height: 90px;
-    transform: none;
     background: none;
   }
 }
@@ -647,6 +656,7 @@ body main .discount-bar .discount-details {
   background: #C1DCDC;
   width: 90%;
   height: 100%;
+  align-items: center;
   box-sizing: border-box;
   border-right: 100px solid #02A0A0;
   border-bottom: 100px solid transparent;
@@ -701,6 +711,7 @@ body main .discount-bar .discount-btn button {
 body main .new-arrival {
   margin-top: 20px;
   align-items: center;
+  width: 100%;
 }
 body main .new-arrival .new-arrival-details {
   display: flex;
@@ -730,11 +741,19 @@ body main .new-arrival .new-arrival-img {
 @media (max-width: 768px) {
   body main .new-arrival .new-arrival-img {
     flex-direction: column;
+    margin-left: 11rem;
   }
 }
 @media (max-width: 991px) {
   body main .new-arrival .new-arrival-img {
     flex-direction: column;
+    margin-right: 12rem;
+  }
+}
+@media (max-width: 1200px) {
+  body main .new-arrival .new-arrival-img {
+    gap: 0.1rem;
+    margin-left: 12rem;
   }
 }
 body main .new-arrival .new-arrival-img .left-image {
@@ -743,16 +762,6 @@ body main .new-arrival .new-arrival-img .left-image {
 body main .new-arrival .new-arrival-img .left-image .img {
   align-items: center;
   justify-content: center;
-}
-@media (max-width: 991px) {
-  body main .new-arrival .new-arrival-img .left-image .img {
-    margin-right: 16rem;
-  }
-}
-@media (max-width: 1023px) {
-  body main .new-arrival .new-arrival-img .left-image .img {
-    width: 50px;
-  }
 }
 body main .new-arrival .new-arrival-img .right-image-group {
   flex-basis: 50%;
@@ -790,6 +799,7 @@ body main .saved-products {
   margin-top: 10rem;
   padding: 2.5rem;
   border: 1px solid #e8e5e5;
+  align-items: center;
 }
 body main .saved-products p {
   font-size: 24px;
@@ -814,16 +824,6 @@ body main .saved-products .gadget_image img {
   margin-left: 15px;
   width: 300px;
   height: 360px;
-}
-@media (max-width: 768px) {
-  body main .saved-products .gadget_image img {
-    width: 100%;
-  }
-}
-@media (max-width: 991px) {
-  body main .saved-products .gadget_image img {
-    width: 100%;
-  }
 }
 @media (max-width: 1023px) {
   body main .saved-products .gadget_image img {
