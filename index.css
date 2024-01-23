@@ -210,6 +210,7 @@ body header .bottom-nav .alt-menu {
     border-radius: 10px;
     flex-direction: column;
     transition: all 0.3s ease;
+    visibility: hidden;
   }
 }
 @media (max-width: 991px) {
@@ -222,6 +223,7 @@ body header .bottom-nav .alt-menu {
     width: 100px;
     padding: 10px;
     border-radius: 10px;
+    visibility: hidden;
     flex-direction: column;
     transition: all 0.3s ease;
   }
@@ -242,7 +244,8 @@ body header .bottom-nav #menu {
   }
 }
 body header .bottom-nav .show {
-  
+ visibility: visible;
+ right: 6%;
 }
 body .hero {
   padding: 3rem 6rem;
