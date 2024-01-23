@@ -16,7 +16,6 @@ body {
 @media (max-width: 768px) {
   body header {
     width: 100%;
-    overflow-x: hidden;
   }
 }
 @media (max-width: 991px) {
