@@ -19,7 +19,6 @@ body{
   header{
         @include respond(small) {
         width: 100%;
-        overflow-x: hidden;
         }
         @include respond(medium) {
              width: 100%;   
