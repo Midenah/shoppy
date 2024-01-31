@@ -288,6 +288,7 @@ body {
         }
       }
       img {
+        width: 100%;
         @include respond(small) {
           width: 100%;
         }
@@ -295,6 +296,9 @@ body {
           width: 100%;
         }
         @include respond(large) {
+          width: 100%;
+        }
+        @include respond(larger) {
           width: 100%;
         }
       }
@@ -349,7 +353,7 @@ body {
     flex-direction: column;
     margin-top: 5rem;
     .explore {
-      padding: 0 8rem;
+      padding: 0 6rem;
       @include respond(small) {
         padding: 0 1.5rem;
       }
@@ -360,6 +364,11 @@ body {
         display: flex;
         justify-content: space-between;
         @include respond(small) {
+          flex-direction: column;
+          text-align: center;
+          margin-bottom: 2rem;
+        }
+        @include respond(medium) {
           flex-direction: column;
           text-align: center;
           margin-bottom: 2rem;
@@ -387,19 +396,49 @@ body {
         }
       }
       .explore-images {
-        img {
-          margin-bottom: 10px;
+        div{
+          display: flex;
+          gap: 20px;
           @include respond(small) {
-            width: 100%;
+           display: block; 
           }
           @include respond(medium) {
-            width: 100%;
+            display: block; 
+           }
+          img{
+            margin-bottom: 10px;
+            @include respond(small) {
+              width: 90%;
+            }
+            @include respond(medium) {
+              width: 90%;
+            }
           }
+          .sm-img{
+            @include respond(large) {
+            height: 350px;
+            }
+            @include respond(larger) {
+              height: 350px;
+              }
+          }
+          .lg-img{
+            @include respond(large) {
+            height: 350px;
+            width: 70%;
+            }
+            @include respond(larger) {
+              height: 350px;
+              width: 90%;
+              }
+          }
+
         }
+        
       }
     }
     .clothing {
-      padding: 8rem;
+      padding: 4rem 6rem;
       display: flex;
       @include respond(small) {
         flex-direction: column;
@@ -461,6 +500,14 @@ body {
           img {
             width: 298px;
             height: 338px;
+            @include respond(larger) {
+              height: 320px;
+              width: 250px;
+              }
+              @include respond(large) {
+                height: 300px;
+                width: 220px;
+                }
           }
         }
         #rest-figure {
@@ -471,19 +518,17 @@ body {
       }
     }
     .discount-bar {
-      margin: 8rem;
+      margin: 6rem 1rem;
       display: flex;
       align-items: center;
       position: relative;
-      left: 40rem;
-      width: 1260px;
+      left: 45rem;
+      width: 1300px;
       height: 110px;
       background: #02a0a0;
       transform: translate(-50%, -50%);
-
       @include respond(small) {
         flex-direction: column;
-        left: 0;
         margin-left:4rem ; 
         align-items: unset;
       }
@@ -492,11 +537,11 @@ body {
         background: none;
       }
       @include respond(large) {
-        width: 790px;
+        width: 890px;
         left: 24rem;
       }
       @include respond(larger) {
-        width: 820px;
+        width: 920px;
         left: 24rem;
       }
       .discount-details {
@@ -549,7 +594,7 @@ body {
       }
     }
     .new-arrival {
-      margin: 20px 10rem;
+      margin: 20px 9rem;
       display: flex;
       flex-direction: column;
       @include respond(small) {
@@ -558,7 +603,6 @@ body {
       @include respond(medium) {
         align-items: center;
       }
-
       .new-arrival-details {
         display: flex;
         color: #02a0a0;
@@ -588,28 +632,34 @@ body {
           flex-direction: column;
         }
         @include respond(larger) {
-          gap: 0.1rem;
-          margin-left: 12rem;
+          gap: 0.6rem;
+          
         }
         img {
+          
           @include respond(medium) {
             align-items: center;
           }
         }
-
         .left-image {
           flex-basis: 50%;
-          @include respond(small) {
-            margin-left: -15rem;
-          }
+         
           img {
             @include respond(small) {
               width: 280px;
               height: 300px;
             }
+            @include respond(large) {
+              width: 400px;
+              height: 650px;
+            }
+            @include respond(larger) {
+              width: 400px;
+              height: 620px;
+            }
+
           }
         }
-
         .right-image {
           flex-basis: 50%;
           display: flex;
@@ -618,31 +668,56 @@ body {
             @include respond(small) {
               width: 280px;
               height: 300px;
-              margin-left: -15rem;
+            }
+            @include respond(large) {
+              width: 450px;
+              height: 300px;
+            }
+             @include respond(larger) {
+              width: 450px;
+              height: 300px;
             }
           }
 
           .small-images {
             display: flex;
             align-items: center;
-            gap: 2rem;
-            margin-top: 1.5rem;
+            gap: 1rem;
+            margin-top: 1rem;
             @include respond(small) {
               flex-direction: column;
+            }
+            img{
+              @include respond(large) {
+                width: 220px;
+                height: 300px;
+              }
+              @include respond(larger) {
+                width: 220px;
+                height: 300px;
+              }
             }
           }
         }
       }
     }
     .saved-products {
-      margin: 8rem;
+      margin: 6rem;
       padding: 2rem;
       border: 1px solid#e8e5e5;
 
       @include respond(small) {
         border: none;
-        padding: 1rem;
-        margin: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      @include respond(medium) {
+        border: none;
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
       }
 
       p {
