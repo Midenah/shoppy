@@ -193,6 +193,7 @@ body {
         @include respond(small) {
           display: block;
           cursor: pointer;
+          right: 5px;
         }
         @include respond(medium) {
           display: block;
@@ -641,6 +642,7 @@ body {
       @include respond(small) {
         border: none;
         padding: 1rem;
+        margin: 1.5rem;
       }
 
       p {

@@ -225,6 +225,7 @@ body header .bottom-nav #menu {
   body header .bottom-nav #menu {
     display: block;
     cursor: pointer;
+    right: 5px;
   }
 }
 @media (max-width: 991px) {
@@ -761,6 +762,7 @@ body main .saved-products {
   body main .saved-products {
     border: none;
     padding: 1rem;
+    margin: 1.5rem;
   }
 }
 body main .saved-products p {
